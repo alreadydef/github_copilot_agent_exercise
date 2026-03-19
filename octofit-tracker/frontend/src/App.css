@@ -1,0 +1,157 @@
+/* ── Global ── */
+body {
+  background-color: #0d1117;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.App {
+  min-height: 100vh;
+}
+
+/* ── Navbar ── */
+.navbar {
+  background: linear-gradient(135deg, #161b22 0%, #1a2233 100%) !important;
+  border-bottom: 2px solid #f78166;
+  padding: 0.6rem 1rem;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: #58a6ff !important;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.navbar-brand img {
+  height: 36px;
+  width: 36px;
+  border-radius: 6px;
+}
+
+.navbar .nav-link {
+  color: #8b949e !important;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: #58a6ff !important;
+}
+
+/* ── Headings ── */
+h1, h2, h3 {
+  color: #58a6ff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.2rem;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* ── Tables ── */
+.table {
+  background-color: #161b22;
+  color: #c9d1d9;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #30363d;
+}
+
+.table thead th {
+  background-color: #1a2233;
+  color: #f78166;
+  border-bottom: 2px solid #f78166;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #0d1117;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background-color: #161b22;
+}
+
+.table td, .table th {
+  border-color: #30363d;
+  padding: 0.75rem 1rem;
+  vertical-align: middle;
+}
+
+.table tbody tr:hover {
+  background-color: #1c2a3a !important;
+}
+
+/* ── Buttons ── */
+.btn-primary {
+  background-color: #238636;
+  border-color: #238636;
+  color: #fff;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #2ea043;
+  border-color: #2ea043;
+}
+
+.btn-outline-primary {
+  color: #58a6ff;
+  border-color: #58a6ff;
+}
+
+.btn-outline-primary:hover {
+  background-color: #58a6ff;
+  color: #0d1117;
+}
+
+/* ── Links ── */
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #79c0ff;
+}
+
+/* ── Container spacing ── */
+.container.mt-4 {
+  padding-bottom: 2rem;
+}
+
+/* ── Welcome section ── */
+.welcome-section {
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+.welcome-section img {
+  height: 120px;
+  width: 120px;
+  border-radius: 16px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 24px rgba(88, 166, 255, 0.2);
+}
+
+.welcome-section h1 {
+  margin-bottom: 0.5rem;
+}
+
+.welcome-section p {
+  color: #8b949e;
+  font-size: 1.1rem;
+}
