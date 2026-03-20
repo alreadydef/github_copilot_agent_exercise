@@ -47,6 +47,8 @@ class Workout(models.Model):
     _id = models.CharField(max_length=24, primary_key=True, default=generate_object_id)
     name = models.CharField(max_length=200)
     description = models.TextField()
+    schedule = models.CharField(max_length=100, blank=True, default='')
+    max_attendance = models.IntegerField(null=True, blank=True)
 
     def __str__(self):
         return self.name

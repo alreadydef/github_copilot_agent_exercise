@@ -37,6 +37,12 @@ class Command(BaseCommand):
         # Создание тренировок
         Workout.objects.create(name='Morning Cardio', description='Cardio for all heroes')
         Workout.objects.create(name='Strength Training', description='Strength for all heroes')
+        Workout.objects.create(
+            name='Manga Maniacs',
+            description='Unleash your inner otaku! Dive into epic battles, unforgettable heroes, and jaw-dropping plot twists from the greatest Japanese Manga (graphic novels) ever created. Whether you\'re a seasoned manga reader or just starting your journey, this club will ignite your passion for the art of storytelling.',
+            schedule='Tuesdays at 5pm',
+            max_attendance=25,
+        )
 
         # Лидерборд
         Leaderboard.objects.create(user=tony, score=100)
