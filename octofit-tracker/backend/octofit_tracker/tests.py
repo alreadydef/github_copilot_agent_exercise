@@ -39,6 +39,17 @@ class WorkoutModelTest(TestCase):
         workout = Workout.objects.create(name='Morning Run', description='A morning cardio run')
         self.assertEqual(workout.name, 'Morning Run')
 
+    def test_create_workout_with_schedule_and_max_attendance(self):
+        workout = Workout.objects.create(
+            name='Manga Maniacs',
+            description='Explore the fantastic stories of the most interesting characters from Japanese Manga (graphic novels).',
+            schedule='Tuesdays at 7pm',
+            max_attendance=15,
+        )
+        self.assertEqual(workout.name, 'Manga Maniacs')
+        self.assertEqual(workout.schedule, 'Tuesdays at 7pm')
+        self.assertEqual(workout.max_attendance, 15)
+
 
 class APIEndpointTest(TestCase):
     def setUp(self):

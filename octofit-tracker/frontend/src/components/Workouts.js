@@ -25,6 +25,8 @@ function Workouts() {
           <tr>
             <th>Name</th>
             <th>Description</th>
+            <th>Schedule</th>
+            <th>Max Attendance</th>
           </tr>
         </thead>
         <tbody>
@@ -32,6 +34,8 @@ function Workouts() {
             <tr key={workout._id || workout.id || index}>
               <td>{workout.name}</td>
               <td>{workout.description}</td>
+              <td>{workout.schedule}</td>
+              <td>{workout.max_attendance}</td>
             </tr>
           ))}
         </tbody>
